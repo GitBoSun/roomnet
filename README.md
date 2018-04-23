@@ -28,4 +28,5 @@ python main.py --test 0 --net vanilla ot rcnn --out_path path-to-output
 ## Some Results:
 ### RCNN:
 ![RCNN Results](https://github.com/GitBoSun/roomnet/blob/master/images/rcnn.png)
+### Vanilla
 ![Vanilla Results](https://github.com/GitBoSun/roomnet/blob/master/images/vanilla.png)
