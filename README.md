@@ -9,7 +9,7 @@ Here I implement two nets: vanilla encoder-decoder version and 3-iter RCNN refin
 
 ## Data
 I use [LSUN dataset](http://lsun.cs.princeton.edu/2017/) and please download and prepare the RGB images and get a explorationo of the .mat file it includs because they contain layout type, key points and other information.
-Here I simply resize the image to (320, 320) with cubic interpolation and do the flip horizontally. (**Note**: When you flip the image, the order of layout key points should also be fliped.) You can see the preparation of data in [prepare_data.py]()
+Here I simply resize the image to (320, 320) with cubic interpolation and do the flip horizontally. (**Note**: When you flip the image, the order of layout key points should also be fliped.) You can see the preparation of data in [prepare_data.py](https://github.com/GitBoSun/roomnet/blob/master/roomnet/prepare_data.py)
 
 ## Pre-requests:
 You need to install tensorflow>=1.2, opencv, numpy, scipy and other basic dependencies.
