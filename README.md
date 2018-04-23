@@ -4,7 +4,7 @@ This is a tensorflow implementation of room layout paper: [RoomNet: End-to-End R
 **Note**: This is a simply out-of-interest experiemnt and I cannot guarantee to get the same effect of the origin paper.
 
 ## Network
-![]
+![Roomnet network Architecture](https://github.com/GitBoSun/roomnet/blob/master/images/net.png)
 Here I implement two nets: vanilla encoder-decoder version and 3-iter RCNN refined version. As the author noted, the latter achieve better results.
 
 ## Data
