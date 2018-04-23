@@ -24,7 +24,7 @@ Testing:
 python main.py --test 0 --net vanilla or rcnn --out_path path-to-output 
 ```
 (P.S. I may upload the pre-trained model later because currently I don't find a place to put it.)
-## Modyfications
+## Modifications
 1. Classification loss: The author only use loss on the ground truth label while I consider whole classes and I use the common cross entropy loss.
 2. Layout loss: I split the layout map to 3 level according to the numerical value which means the foreground and background. The bigger the value is, the larger weight its corresponding loss takes.
 3. Upsampling layer: Since I don't find upsampling operation that remember the pooling positions and reproject those back, I simply use the conv_transpose operation in tf.
