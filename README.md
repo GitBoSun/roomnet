@@ -26,3 +26,6 @@ python main.py --test 0 --net vanilla ot rcnn --out_path path-to-output
 (P.S. I may upload the pre-trained model later because currently I don't find a place to put it.)
 
 ## Some Results:
+### RCNN:
+![RCNN Results](https://github.com/GitBoSun/roomnet/blob/master/images/rcnn.png)
+![Vanilla Results](https://github.com/GitBoSun/roomnet/blob/master/images/vanilla.png)
