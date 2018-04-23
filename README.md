@@ -16,13 +16,13 @@ You need to install tensorflow>=1.2, opencv, numpy, scipy and other basic depend
 
 ## How to use:
 Training: 
-'''
+```
 python main.py --train 0 or 1 --net vanilla ot rcnn --out_path path-to-output 
-'''
+```
 Testing:
-'''
+```
 python main.py --test 0 --net vanilla ot rcnn --out_path path-to-output 
-'''
+```
 (P.S. I may upload the pre-trained model later because currently I don't find a place to put it.)
 
 ## Some Results:
