@@ -1,6 +1,8 @@
 # roomnet
 This is a tensorflow implementation of room layout paper: [RoomNet: End-to-End Room Layout Estimation](https://arxiv.org/pdf/1703.06241.pdf).
 
+Pre-trained model: https://drive.google.com/open?id=1tyw1fmSfd8LvItCOJrOWMMo7Kpjb7l4S
+
 **Note**: This is a simply out-of-interest experiemnt and I cannot guarantee to get the same effect of the origin paper.
 
 ## Network
@@ -8,7 +10,7 @@ This is a tensorflow implementation of room layout paper: [RoomNet: End-to-End R
 Here I implement two nets: vanilla encoder-decoder version and 3-iter RCNN refined version. As the author noted, the latter achieve better results.
 
 ## Data
-I use [LSUN dataset](http://lsun.cs.princeton.edu/2017/) and please download and prepare the RGB images and get a explorationo of the .mat file it includs because they contain layout type, key points and other information.
+I use [LSUN dataset](https://www.yf.io/p/lsun) and please download and prepare the RGB images and get a explorationo of the .mat file it includs because they contain layout type, key points and other information.
 Here I simply resize the image to (320, 320) with cubic interpolation and do the flip horizontally. (**Note**: When you flip the image, the order of layout key points should also be fliped.) You can see the preparation of data in [prepare_data.py](https://github.com/GitBoSun/roomnet/blob/master/roomnet/prepare_data.py)
 
 ## Pre-requests:
@@ -23,7 +25,6 @@ Testing:
 ```
 python main.py --test 0 --net vanilla (or rcnn) --out_path path-to-output 
 ```
-(P.S. I may upload the pre-trained model later because currently I don't find a place to put it.)
 ## Modifications
 1. Classification loss: The author only use loss on the ground truth label while I consider whole classes and I use the common cross entropy loss.
 2. Layout loss: I split the layout map to 3 level according to the numerical value which means the foreground and background. The bigger the value is, the larger weight its corresponding loss takes.
