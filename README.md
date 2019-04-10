@@ -2,6 +2,7 @@
 This is a tensorflow implementation of room layout paper: [RoomNet: End-to-End Room Layout Estimation](https://arxiv.org/pdf/1703.06241.pdf).
 
 New: You can find pre-trained model [here](https://drive.google.com/open?id=1tyw1fmSfd8LvItCOJrOWMMo7Kpjb7l4S) and sample.npz for [get_res.py](https://github.com/GitBoSun/roomnet/blob/master/roomnet/get_res.py) [here](https://drive.google.com/open?id=1djs4bEBr2XRxzsQVES02siSTnRXvPBz9)
+
 **Note**: This is a simply out-of-interest experiemnt and I cannot guarantee to get the same effect of the origin paper.
 
 ## Network
