@@ -2,7 +2,7 @@ import numpy as np
 import cv2
 import os
 
-out=np.load('rcnn/test/2.npz')
+out=np.load('sample.npz')
 im=out['im']
 gt_lay=out['gt_lay']
 gt_label=out['gt_label']
